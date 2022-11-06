@@ -9,7 +9,6 @@ Wrote a publisher and subscriber node which publishes My name is Dhanush to a to
 go to the root of the workspace ros2_ws then type the following in the terminal: -
 
 ```
-. install/setup.bash
 colcon build --packages-select cpp_pubsub
 ```
 open a new terminal and type: -
