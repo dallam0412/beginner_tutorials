@@ -1,0 +1,35 @@
+[0.266s] Invoking command in '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub': /usr/bin/cmake /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/install/cpp_pubsub
+[3.945s] -- The C compiler identification is GNU 9.4.0
+[5.223s] -- The CXX compiler identification is GNU 9.4.0
+[5.253s] -- Check for working C compiler: /usr/bin/cc
+[5.388s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.389s] -- Detecting C compiler ABI info
+[5.470s] -- Detecting C compiler ABI info - done
+[5.485s] -- Detecting C compile features
+[5.486s] -- Detecting C compile features - done
+[5.490s] -- Check for working CXX compiler: /usr/bin/c++
+[5.579s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.581s] -- Detecting CXX compiler ABI info
+[5.669s] -- Detecting CXX compiler ABI info - done
+[5.682s] -- Detecting CXX compile features
+[5.682s] -- Detecting CXX compile features - done
+[5.867s] CMake Error at CMakeLists.txt:9 (find_package):
+[5.868s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[5.868s]   has asked CMake to find a package configuration file provided by
+[5.868s]   "ament_cmake", but CMake did not find one.
+[5.868s] 
+[5.868s]   Could not find a package configuration file provided by "ament_cmake" with
+[5.868s]   any of the following names:
+[5.869s] 
+[5.869s]     ament_cmakeConfig.cmake
+[5.869s]     ament_cmake-config.cmake
+[5.869s] 
+[5.869s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[5.869s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[5.869s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[5.869s]   has been installed.
+[5.870s] 
+[5.870s] 
+[5.870s] -- Configuring incomplete, errors occurred!
+[5.870s] See also "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles/CMakeOutput.log".
+[5.873s] Invoked command in '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub' returned '1': /usr/bin/cmake /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/install/cpp_pubsub
