@@ -36,6 +36,8 @@ install(TARGETS
   ${PROJECT_NAME} "rosidl_typesupport_cpp")
 rosidl_target_interfaces(client
   ${PROJECT_NAME} "rosidl_typesupport_cpp")
+ install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
   
 
 if(BUILD_TESTING)

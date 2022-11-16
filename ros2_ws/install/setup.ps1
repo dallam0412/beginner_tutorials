@@ -26,6 +26,7 @@ _colcon_prefix_chain_powershell_source_script "/opt/ros/noetic\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/dhanush/catkin_ws/devel\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/dhanush/ros2_humble/install/orocos_kdl_vendor\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/dhanush/ros2_humble/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)
