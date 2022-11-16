@@ -1,3 +1,13 @@
+/**
+ * @file client.cpp
+ * @author Dhanush Babu Allam (dallam@umd.edu)
+ * @brief client node
+ * @version 0.1
+ * @date 2022-11-16
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "rclcpp/rclcpp.hpp"
 #include "cpp_pubsub/srv/strings.hpp"
 
@@ -6,7 +16,13 @@
 #include <memory>
 
 using namespace std::chrono_literals;
-
+/**
+ * @brief intializes the node and recives the request
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);

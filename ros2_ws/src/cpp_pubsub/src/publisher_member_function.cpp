@@ -1,17 +1,13 @@
-// Copyright 2016 Open Source Robotics Foundation, Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @file publisher_member_function.cpp
+ * @author Dhanush Babu Allam (dallam@umd.edu)
+ * @brief a simple publisher and has parameters to change the frequency of printing in the terminal. Has, service node to accept a string
+ * @version 0.1
+ * @date 2022-11-16
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include <chrono>
 #include <functional>
 #include <memory>
@@ -29,6 +25,10 @@ using std::placeholders::_2;
  * member function as a callback from the timer. */
 using PARAMETER_EVENT  = std::shared_ptr<rclcpp::ParameterEventHandler>;
 using PARAMETER_HNADLE = std::shared_ptr<rclcpp::ParameterCallbackHandle>;
+/**
+ * @brief constructor for the node
+ * 
+ */
 class MinimalPublisher : public rclcpp::Node {
  public:
   MinimalPublisher() : Node("minimal_publisher"), count_(0) {
@@ -60,6 +60,12 @@ class MinimalPublisher : public rclcpp::Node {
 private:
 PARAMETER_EVENT  m_param_subscriber_;
 PARAMETER_HNADLE m_paramHandle_;
+/**
+ * @brief service function to accept and respond a string
+ * 
+ * @param request 
+ * @param response 
+ */
  void take_input(const std::shared_ptr<cpp_pubsub::srv::Strings::Request> request,
                   std::shared_ptr<cpp_pubsub::srv::Strings::Response> response)
                   {
@@ -70,7 +76,10 @@ PARAMETER_HNADLE m_paramHandle_;
                   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sending back response\na: %s",
                   response ->str.c_str());
                   }
-
+/**
+ * @brief publishes the message
+ * 
+ */
   void timer_callback() {
     auto param = this->get_parameter ("freq");
     auto freq = param.get_parameter_value().get<std::float_t>();
@@ -80,6 +89,11 @@ PARAMETER_HNADLE m_paramHandle_;
     RCLCPP_INFO(this->get_logger(), "Publishing at %.2f Hz: '%s'", freq, message.data.c_str());
     publisher_->publish(message);
   }
+  /**
+   * @brief accepts the frequency in which to print
+   * 
+   * @param param 
+   */
   void param_callback (const rclcpp::Parameter & param) {
     RCLCPP_INFO (this->get_logger(),
                  "cb: Received an update to parameter \"%s\" of type %s: %.2f",
@@ -97,7 +111,13 @@ PARAMETER_HNADLE m_paramHandle_;
   std::string respond_message = "hello";
   size_t count_;
 };
-
+/**
+ * @brief main function which initializes the node
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<MinimalPublisher>());
