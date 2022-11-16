@@ -1,0 +1,24 @@
+In file included from [01m[K/home/dhanush/ros2_humble/build/rclcpp/include/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/src/cpp_pubsub/src/client.cpp:1[m[K:
+[01m[K/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/src/cpp_pubsub/src/client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/src/cpp_pubsub/src/client.cpp:34:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 5 has type ‘[01m[Kconst char*[m[K’ [[01;35m[K-Wformat=[m[K]
+   34 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), [01;35m[K"string: %ld"[m[K, [32m[Kresult.get()->str.c_str()[m[K);
+      |                                               [01;35m[K^~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                     [32m[K|[m[K
+      |                                                                                     [32m[Kconst char*[m[K
+[01m[K/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/src/cpp_pubsub/src/client.cpp:34:58:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   34 |     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "string: [01;36m[K%ld[m[K", result.get()->str.c_str());
+      |                                                        [01;36m[K~~^[m[K
+      |                                                          [01;36m[K|[m[K
+      |                                                          [01;36m[Klong int[m[K
+      |                                                        [32m[K%s[m[K

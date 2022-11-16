@@ -12,10 +12,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
   "RCUTILS_ENABLE_FAULT_INJECTION"
+  "ROS_PACKAGE_NAME=\"cpp_pubsub\""
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "rosidl_generator_cpp"
   "/home/dhanush/ros2_humble/install/rclcpp/include/rclcpp"
   "/home/dhanush/ros2_humble/install/std_msgs/include/std_msgs"
   "/home/dhanush/ros2_humble/install/ament_index_cpp/include/ament_index_cpp"
@@ -46,6 +48,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles/cpp_pubsub__rosidl_typesupport_cpp.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

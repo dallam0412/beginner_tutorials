@@ -86,6 +86,7 @@ talker: /home/dhanush/ros2_humble/install/std_msgs/lib/libstd_msgs__rosidl_types
 talker: /home/dhanush/ros2_humble/install/std_msgs/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 talker: /home/dhanush/ros2_humble/install/std_msgs/lib/libstd_msgs__rosidl_typesupport_cpp.so
 talker: /home/dhanush/ros2_humble/install/std_msgs/lib/libstd_msgs__rosidl_generator_py.so
+talker: libcpp_pubsub__rosidl_typesupport_cpp.so
 talker: /home/dhanush/ros2_humble/install/libstatistics_collector/lib/liblibstatistics_collector.so
 talker: /home/dhanush/ros2_humble/install/rcl/lib/librcl.so
 talker: /home/dhanush/ros2_humble/install/rmw_implementation/lib/librmw_implementation.so
@@ -130,17 +131,17 @@ talker: /home/dhanush/ros2_humble/install/builtin_interfaces/lib/libbuiltin_inte
 talker: /home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/lib/librosidl_typesupport_introspection_cpp.so
 talker: /home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_c/lib/librosidl_typesupport_introspection_c.so
 talker: /home/dhanush/ros2_humble/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-talker: /home/dhanush/ros2_humble/install/rosidl_typesupport_cpp/lib/librosidl_typesupport_cpp.so
 talker: /home/dhanush/ros2_humble/install/std_msgs/lib/libstd_msgs__rosidl_typesupport_c.so
 talker: /home/dhanush/ros2_humble/install/std_msgs/lib/libstd_msgs__rosidl_generator_c.so
 talker: /home/dhanush/ros2_humble/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_generator_py.so
 talker: /home/dhanush/ros2_humble/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 talker: /home/dhanush/ros2_humble/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_generator_c.so
+talker: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+talker: /home/dhanush/ros2_humble/install/rosidl_typesupport_cpp/lib/librosidl_typesupport_cpp.so
 talker: /home/dhanush/ros2_humble/install/rosidl_typesupport_c/lib/librosidl_typesupport_c.so
 talker: /home/dhanush/ros2_humble/install/rcpputils/lib/librcpputils.so
 talker: /home/dhanush/ros2_humble/install/rosidl_runtime_c/lib/librosidl_runtime_c.so
 talker: /home/dhanush/ros2_humble/install/rcutils/lib/librcutils.so
-talker: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 talker: CMakeFiles/talker.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable talker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
