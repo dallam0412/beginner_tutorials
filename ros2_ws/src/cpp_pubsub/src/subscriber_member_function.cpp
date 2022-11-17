@@ -49,5 +49,6 @@ int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<MinimalSubscriber>());
   rclcpp::shutdown();
+  RCLCPP_WARN_STREAM(std::make_shared<MinimalSubscriber>()->get_logger(), "Shutting Down!! " << 4);
   return 0;
 }
