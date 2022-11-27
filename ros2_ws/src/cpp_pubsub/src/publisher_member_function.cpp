@@ -15,6 +15,9 @@
 #include <string>
 
 #include "cpp_pubsub/srv/strings.hpp"
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/static_transform_broadcaster.h"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
@@ -55,6 +58,8 @@ class MinimalPublisher : public rclcpp::Node {
           std::bind(&MinimalPublisher::take_input, this, std::placeholders::_1,
                     std::placeholders::_2));
       RCLCPP_DEBUG_STREAM(this->get_logger(), "server initialized");
+      tf_static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
+      this->make_transforms();
     } catch (...) {
       RCLCPP_ERROR_STREAM(this->get_logger(), "error found");
       RCLCPP_FATAL_STREAM(this->get_logger(), "not working");
@@ -112,10 +117,32 @@ class MinimalPublisher : public rclcpp::Node {
     timer_ = this->create_wall_timer(period,
                                      topicCallbackPtr);  // no memory leak here
   }
+  void make_transforms()
+  {
+    geometry_msgs::msg::TransformStamped t;
+    t.header.stamp = this->get_clock()->now();
+    t.header.frame_id = "world";
+    t.child_frame_id = "mystaticturtle";
+
+    t.transform.translation.x = 1;
+    t.transform.translation.y = 2;
+    t.transform.translation.z = 3;
+    tf2::Quaternion q;
+    q.setRPY(
+      4,
+      5,
+      6);
+    t.transform.rotation.x = q.x();
+    t.transform.rotation.y = q.y();
+    t.transform.rotation.z = q.z();
+    t.transform.rotation.w = q.w();
+    tf_static_broadcaster_->sendTransform(t);
+  }
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
   rclcpp::Service<cpp_pubsub::srv::Strings>::SharedPtr server;
   std::string respond_message = "hello";
+  std::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_static_broadcaster_;
   size_t count_;
 };
 /**
