@@ -1,0 +1,36 @@
+Start testing: Dec 05 22:53 EST
+----------------------------------------------------------
+1/1 Testing: test_cpp_pubsub
+1/1 Test: test_cpp_pubsub
+Command: "/usr/bin/python3.8" "-u" "/home/dhanush/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml" "--package-name" "cpp_pubsub" "--output-file" "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/ament_cmake_gtest/test_cpp_pubsub.txt" "--command" "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_cpp_pubsub" "--gtest_output=xml:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml"
+Directory: /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub
+"test_cpp_pubsub" start time: Dec 05 22:53 EST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub':
+ - /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_cpp_pubsub --gtest_output=xml:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TaskPublisher
+[ RUN      ] TaskPublisher.test_num_publishers
+[       OK ] TaskPublisher.test_num_publishers (26 ms)
+[----------] 1 test from TaskPublisher (26 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml'
+-- run_test.py: verify result file '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml'
+<end of output>
+Test time =   0.71 sec
+----------------------------------------------------------
+Test Passed.
+"test_cpp_pubsub" end time: Dec 05 22:53 EST
+"test_cpp_pubsub" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 05 22:53 EST
+
+gtest =   0.71 sec*proc
+

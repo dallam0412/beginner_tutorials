@@ -5,11 +5,11 @@
 [----------] Global test environment set-up.
 [----------] 1 test from TaskPublisher
 [ RUN      ] TaskPublisher.test_num_publishers
-[       OK ] TaskPublisher.test_num_publishers (27 ms)
-[----------] 1 test from TaskPublisher (27 ms total)
+[       OK ] TaskPublisher.test_num_publishers (26 ms)
+[----------] 1 test from TaskPublisher (26 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (27 ms total)
+[==========] 1 test from 1 test suite ran. (26 ms total)
 [  PASSED  ] 1 test.
 
 
