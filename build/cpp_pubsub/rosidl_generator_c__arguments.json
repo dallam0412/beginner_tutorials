@@ -1,0 +1,24 @@
+{
+  "package_name": "cpp_pubsub",
+  "output_dir": "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/build/cpp_pubsub/rosidl_generator_c/cpp_pubsub",
+  "template_dir": "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/build/cpp_pubsub/rosidl_adapter/cpp_pubsub:srv/Strings.idl"
+  ],
+  "target_dependencies": [
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../../../lib/python3.8/site-packages/rosidl_generator_c/__init__.py",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/home/dhanush/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/build/cpp_pubsub/rosidl_adapter/cpp_pubsub/srv/Strings.idl"
+  ]
+}

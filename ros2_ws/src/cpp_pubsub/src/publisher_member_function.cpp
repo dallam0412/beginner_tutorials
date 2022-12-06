@@ -48,7 +48,7 @@ class MinimalPublisher : public rclcpp::Node {
           std::bind(&MinimalPublisher::param_callback, this, _1);
       m_paramHandle_ =
           m_param_subscriber_->add_parameter_callback("freq", paramCallbackPtr);
-      publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+      publisher_ = this->create_publisher<std_msgs::msg::String>("chatter", 10);
       auto period = std::chrono::milliseconds(static_cast<int>((1000 / freq)));
       timer_ = this->create_wall_timer(
           period, std::bind(&MinimalPublisher::timer_callback, this));

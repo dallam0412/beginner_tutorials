@@ -11,7 +11,6 @@
 #include <chrono>
 #include <cstdlib>
 #include <memory>
-
 #include "cpp_pubsub/srv/strings.hpp"
 #include "rclcpp/rclcpp.hpp"
 

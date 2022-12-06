@@ -1,0 +1,19 @@
+{
+  "package_name": "cpp_pubsub",
+  "output_dir": "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/build/cpp_pubsub/rosidl_typesupport_introspection_cpp/cpp_pubsub",
+  "template_dir": "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/build/cpp_pubsub/rosidl_adapter/cpp_pubsub:srv/Strings.idl"
+  ],
+  "target_dependencies": [
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/lib/python3.8/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/home/dhanush/ros2_humble/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/build/cpp_pubsub/rosidl_adapter/cpp_pubsub/srv/Strings.idl"
+  ]
+}
