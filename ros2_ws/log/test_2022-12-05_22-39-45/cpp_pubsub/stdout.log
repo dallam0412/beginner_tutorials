@@ -1,0 +1,44 @@
+UpdateCTestConfiguration  from :/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CTestConfiguration.ini
+Parse Config file:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CTestConfiguration.ini
+   Site: dhanush-Inspiron-5570
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+Create new tag: 20221206-0339 - Experimental
+UpdateCTestConfiguration  from :/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CTestConfiguration.ini
+Parse Config file:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CTestConfiguration.ini
+Test project /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: test_cpp_pubsub
+
+1: Test command: /usr/bin/python3.8 "-u" "/home/dhanush/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml" "--package-name" "cpp_pubsub" "--output-file" "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/ament_cmake_gtest/test_cpp_pubsub.txt" "--command" "/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_cpp_pubsub" "--gtest_output=xml:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub':
+1:  - /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_cpp_pubsub --gtest_output=xml:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml
+1: [==========] Running 1 test from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 1 test from TaskPublisher
+1: [ RUN      ] TaskPublisher.test_num_publishers
+1: [       OK ] TaskPublisher.test_num_publishers (27 ms)
+1: [----------] 1 test from TaskPublisher (27 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 1 test from 1 test suite ran. (27 ms total)
+1: [  PASSED  ] 1 test.
+1: -- run_test.py: return code 0
+1: -- run_test.py: inject classname prefix into gtest result file '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml'
+1: -- run_test.py: verify result file '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml'
+1/1 Test #1: test_cpp_pubsub ..................   Passed    0.80 sec
+
+[0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 1
+
+Label Time Summary:
+gtest    =   0.80 sec*proc (1 test)
+
+Total Test time (real) =   0.81 sec

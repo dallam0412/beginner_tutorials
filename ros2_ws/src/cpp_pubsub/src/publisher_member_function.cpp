@@ -16,10 +16,10 @@
 
 #include "cpp_pubsub/srv/strings.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
-#include "tf2/LinearMath/Quaternion.h"
-#include "tf2_ros/static_transform_broadcaster.h"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/static_transform_broadcaster.h"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -58,7 +58,8 @@ class MinimalPublisher : public rclcpp::Node {
           std::bind(&MinimalPublisher::take_input, this, std::placeholders::_1,
                     std::placeholders::_2));
       RCLCPP_DEBUG_STREAM(this->get_logger(), "server initialized");
-      tf_static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
+      tf_static_broadcaster_ =
+          std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
       this->make_transforms();
     } catch (...) {
       RCLCPP_ERROR_STREAM(this->get_logger(), "error found");
@@ -111,14 +112,13 @@ class MinimalPublisher : public rclcpp::Node {
                 param.get_name().c_str(), param.get_type_name().c_str(),
                 param.as_double());
 
-    auto period = std::chrono::milliseconds(static_cast<int>
-    (1000 / param.as_double()));
+    auto period =
+        std::chrono::milliseconds(static_cast<int>(1000 / param.as_double()));
     auto topicCallbackPtr = std::bind(&MinimalPublisher::timer_callback, this);
     timer_ = this->create_wall_timer(period,
                                      topicCallbackPtr);  // no memory leak here
   }
-  void make_transforms()
-  {
+  void make_transforms() {
     geometry_msgs::msg::TransformStamped t;
     t.header.stamp = this->get_clock()->now();
     t.header.frame_id = "world";
@@ -128,10 +128,7 @@ class MinimalPublisher : public rclcpp::Node {
     t.transform.translation.y = 2;
     t.transform.translation.z = 3;
     tf2::Quaternion q;
-    q.setRPY(
-      4,
-      5,
-      6);
+    q.setRPY(4, 5, 6);
     t.transform.rotation.x = q.x();
     t.transform.rotation.y = q.y();
     t.transform.rotation.z = q.z();
