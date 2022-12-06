@@ -282,6 +282,12 @@ SITE:STRING=dhanush-Inspiron-5570
 //The directory containing a CMake configuration file for TinyXML2.
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
+//Path to a file.
+_gtest_header_file:FILEPATH=/home/dhanush/ros2_humble/install/gtest_vendor/src/gtest_vendor/include/gtest/gtest.h
+
+//Path to a file.
+_gtest_src_file:FILEPATH=/home/dhanush/ros2_humble/install/gtest_vendor/src/gtest_vendor/src/gtest.cc
+
 //Path to a library.
 _lib:FILEPATH=/home/dhanush/ros2_humble/install/tf2_msgs/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
 
@@ -455,6 +461,18 @@ foonathan_memory_DIR:PATH=/home/dhanush/ros2_humble/install/foonathan_memory_ven
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/home/dhanush/ros2_humble/install/geometry_msgs/share/geometry_msgs/cmake
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/gtest
+
+//Dependencies for the target
+gtest_LIB_DEPENDS:STATIC=general;-pthread;
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=/home/dhanush/ros2_humble/install/gtest_vendor/src/gtest_vendor
+
+//The directory containing a CMake configuration file for gtest_vendor.
+gtest_vendor_DIR:PATH=/home/dhanush/ros2_humble/install/gtest_vendor/share/gtest_vendor/cmake
 
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/home/dhanush/ros2_humble/install/libstatistics_collector/share/libstatistics_collector/cmake
@@ -722,7 +740,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -779,6 +797,12 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10(3.
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][v3.8.10(3.5)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+GTEST_FROM_SOURCE_BASE_DIR:INTERNAL=/home/dhanush/ros2_humble/install/gtest_vendor/src/gtest_vendor
+GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
+GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/home/dhanush/ros2_humble/install/gtest_vendor/src/gtest_vendor/include
+GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
+GTEST_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/gtest
+GTEST_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gtest_main
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
@@ -803,6 +827,8 @@ PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 PYTHON_SOABI:INTERNAL=cpython-38-x86_64-linux-gnu
 //The full suffix for Python native extensions. See PEP-3149: https://www.python.org/dev/peps/pep-3149/.
 PythonExtra_EXTENSION_SUFFIX:INTERNAL=.cpython-38-x86_64-linux-gnu
+//Result of TRY_COMPILE
+THREADS_HAVE_PTHREAD_ARG:INTERNAL=TRUE
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=

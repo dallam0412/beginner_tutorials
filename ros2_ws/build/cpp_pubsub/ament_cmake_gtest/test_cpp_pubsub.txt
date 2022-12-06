@@ -1,0 +1,18 @@
+-- run_test.py: invoking following command in '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub':
+ - /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_cpp_pubsub --gtest_output=xml:/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml
+
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TaskPublisher
+[ RUN      ] TaskPublisher.test_num_publishers
+[       OK ] TaskPublisher.test_num_publishers (62 ms)
+[----------] 1 test from TaskPublisher (62 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (62 ms total)
+[  PASSED  ] 1 test.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml'
+-- run_test.py: verify result file '/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/test_results/cpp_pubsub/test_cpp_pubsub.gtest.xml'

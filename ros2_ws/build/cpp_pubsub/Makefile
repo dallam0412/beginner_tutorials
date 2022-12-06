@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_cpp_pubsub
+
+# Build rule for target.
+test_cpp_pubsub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cpp_pubsub
+.PHONY : test_cpp_pubsub
+
+# fast build rule for target.
+test_cpp_pubsub/fast:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/build
+.PHONY : test_cpp_pubsub/fast
+
+#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -439,6 +452,32 @@ cpp_pubsub__py: cmake_check_build_system
 cpp_pubsub__py/fast:
 	$(MAKE) -f cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/build.make cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/build
 .PHONY : cpp_pubsub__py/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 rosidl_generator_c/cpp_pubsub/srv/detail/strings__functions.o: rosidl_generator_c/cpp_pubsub/srv/detail/strings__functions.c.o
 
@@ -818,6 +857,60 @@ src/subscriber_member_function.cpp.s:
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.s
 .PHONY : src/subscriber_member_function.cpp.s
 
+test/main.o: test/main.cpp.o
+
+.PHONY : test/main.o
+
+# target to build an object file
+test/main.cpp.o:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/test/main.cpp.o
+.PHONY : test/main.cpp.o
+
+test/main.i: test/main.cpp.i
+
+.PHONY : test/main.i
+
+# target to preprocess a source file
+test/main.cpp.i:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/test/main.cpp.i
+.PHONY : test/main.cpp.i
+
+test/main.s: test/main.cpp.s
+
+.PHONY : test/main.s
+
+# target to generate assembly for a file
+test/main.cpp.s:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/test/main.cpp.s
+.PHONY : test/main.cpp.s
+
+test/test.o: test/test.cpp.o
+
+.PHONY : test/test.o
+
+# target to build an object file
+test/test.cpp.o:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/test/test.cpp.o
+.PHONY : test/test.cpp.o
+
+test/test.i: test/test.cpp.i
+
+.PHONY : test/test.i
+
+# target to preprocess a source file
+test/test.cpp.i:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/test/test.cpp.i
+.PHONY : test/test.cpp.i
+
+test/test.s: test/test.cpp.s
+
+.PHONY : test/test.s
+
+# target to generate assembly for a file
+test/test.cpp.s:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/test/test.cpp.s
+.PHONY : test/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -827,6 +920,7 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_cpp_pubsub"
 	@echo "... client"
 	@echo "... install/strip"
 	@echo "... listener"
@@ -852,6 +946,8 @@ help:
 	@echo "... cpp_pubsub__rosidl_typesupport_c"
 	@echo "... cpp_pubsub__rosidl_typesupport_cpp"
 	@echo "... cpp_pubsub__py"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... rosidl_generator_c/cpp_pubsub/srv/detail/strings__functions.o"
 	@echo "... rosidl_generator_c/cpp_pubsub/srv/detail/strings__functions.i"
 	@echo "... rosidl_generator_c/cpp_pubsub/srv/detail/strings__functions.s"
@@ -894,6 +990,12 @@ help:
 	@echo "... src/subscriber_member_function.o"
 	@echo "... src/subscriber_member_function.i"
 	@echo "... src/subscriber_member_function.s"
+	@echo "... test/main.o"
+	@echo "... test/main.i"
+	@echo "... test/main.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 .PHONY : help
 
 

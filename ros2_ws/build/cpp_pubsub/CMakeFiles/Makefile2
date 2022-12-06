@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_w
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/test_cpp_pubsub.dir/all
 all: CMakeFiles/client.dir/all
 all: CMakeFiles/listener.dir/all
 all: CMakeFiles/talker.dir/all
@@ -70,15 +71,18 @@ all: CMakeFiles/cpp_pubsub__rosidl_typesupport_introspection_c.dir/all
 all: CMakeFiles/cpp_pubsub__rosidl_typesupport_c.dir/all
 all: CMakeFiles/cpp_pubsub__rosidl_typesupport_cpp.dir/all
 all: cpp_pubsub__py/all
+all: gtest/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: cpp_pubsub__py/preinstall
+preinstall: gtest/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/test_cpp_pubsub.dir/clean
 clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/listener.dir/clean
 clean: CMakeFiles/talker.dir/clean
@@ -100,6 +104,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/cpp_pubsub__rosidl_typesupport_c.dir/clean
 clean: CMakeFiles/cpp_pubsub__rosidl_typesupport_cpp.dir/clean
 clean: cpp_pubsub__py/clean
+clean: gtest/clean
 
 .PHONY : clean
 
@@ -120,6 +125,53 @@ cpp_pubsub__py/preinstall:
 cpp_pubsub__py/clean: cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/clean
 
 .PHONY : cpp_pubsub__py/clean
+
+#=============================================================================
+# Directory level rules for directory gtest
+
+# Recursive "all" directory target.
+gtest/all:
+
+.PHONY : gtest/all
+
+# Recursive "preinstall" directory target.
+gtest/preinstall:
+
+.PHONY : gtest/preinstall
+
+# Recursive "clean" directory target.
+gtest/clean: gtest/CMakeFiles/gtest_main.dir/clean
+gtest/clean: gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : gtest/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_cpp_pubsub.dir
+
+# All Build rule for target.
+CMakeFiles/test_cpp_pubsub.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/test_cpp_pubsub.dir/all: gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/depend
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=42,43,44 "Built target test_cpp_pubsub"
+.PHONY : CMakeFiles/test_cpp_pubsub.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_cpp_pubsub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_cpp_pubsub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles 0
+.PHONY : CMakeFiles/test_cpp_pubsub.dir/rule
+
+# Convenience name for target.
+test_cpp_pubsub: CMakeFiles/test_cpp_pubsub.dir/rule
+
+.PHONY : test_cpp_pubsub
+
+# clean rule for target.
+CMakeFiles/test_cpp_pubsub.dir/clean:
+	$(MAKE) -f CMakeFiles/test_cpp_pubsub.dir/build.make CMakeFiles/test_cpp_pubsub.dir/clean
+.PHONY : CMakeFiles/test_cpp_pubsub.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/client.dir
@@ -157,7 +209,7 @@ CMakeFiles/client.dir/clean:
 CMakeFiles/listener.dir/all:
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/depend
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=34,35 "Built target listener"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=38,39 "Built target listener"
 .PHONY : CMakeFiles/listener.dir/all
 
 # Build rule for subdir invocation for target.
@@ -186,7 +238,7 @@ CMakeFiles/talker.dir/all: CMakeFiles/cpp_pubsub__cpp.dir/all
 CMakeFiles/talker.dir/all: CMakeFiles/cpp_pubsub__rosidl_typesupport_cpp.dir/all
 	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/depend
 	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=36,37 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=40,41 "Built target talker"
 .PHONY : CMakeFiles/talker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -711,6 +763,60 @@ cpp_pubsub__py: cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/rule
 cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/clean:
 	$(MAKE) -f cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/build.make cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/clean
 .PHONY : cpp_pubsub__py/CMakeFiles/cpp_pubsub__py.dir/clean
+
+#=============================================================================
+# Target rules for target gtest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+gtest/CMakeFiles/gtest_main.dir/all:
+	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=36,37 "Built target gtest_main"
+.PHONY : gtest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles 0
+.PHONY : gtest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: gtest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+gtest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/clean
+.PHONY : gtest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target gtest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+gtest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles --progress-num=34,35 "Built target gtest"
+.PHONY : gtest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Documents/HW/ENPM808X/beginner_tutorials/ros2_ws/build/cpp_pubsub/CMakeFiles 0
+.PHONY : gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+gtest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/clean
+.PHONY : gtest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
